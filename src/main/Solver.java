@@ -1,24 +1,17 @@
 package main;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Solver {
 
     /**
-     * This constructor must exist, and must have only one parameter of type int
-     * @param size board will be size * size square
+     * Performs the Knight's Tour algorithm and returns the tour according to the readme
+     * @param size specifies the size of the board, as size*size
+     * @param startX the x coordinate of the starting location, zero-indexed
+     * @param startY the y coordinate of the starting location, zero-indexed
+     * @return the tour found, following the format specified in the readme
      */
-    public Solver(int size) {
-        
-    }
-
-    /**
-     * Performs the KnightsTour and returns a valid tour according to the specs 
-     * @param start start lol
-     * @return what I said
-     */
-    public HashMap<Vector2D, Integer> solve(Vector2D start) {
+    public static HashMap<Vector2D, Integer> solve(int size, int startX, int startY) {
         return new HashMap<>();
     }
 

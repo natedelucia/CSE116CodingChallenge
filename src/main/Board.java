@@ -5,11 +5,14 @@ import java.util.Arrays;
 import java.util.HashMap;
 
 /**
- * You may use this board class if you want. It has some functions that may help you to program the solver. It is
- * likely not very fast though
+ * You may use this board class if you want. It has some functions that may help you to program the solver, but it is
+ * likely not very fast
  */
 public class Board {
 
+	/**
+	 * List of all 8 relative moves that a knight can take
+	 */
 	public static ArrayList<Vector2D> directions = new ArrayList<>(
 			Arrays.asList(new Vector2D(2, 1), new Vector2D(1, 2), new Vector2D(-1, 2), new Vector2D(-2, 1),
 					new Vector2D(-2, -1), new Vector2D(-1, -2), new Vector2D(1, -2), new Vector2D(2, -1)));
@@ -26,7 +29,7 @@ public class Board {
 	}
 
 	/**
-	 * Access the grid of the board. This grid is N*N, where n is the input size to the Board constructor
+	 * Access the grid of the board. This grid is N*N, where N is the input size to the Board constructor
 	 * It is represented as a map from a particular location <x, y> to it's order in the path. Initially,
 	 * it is empty, signifying that nothing has been explored yet
 	 * @return the grid
@@ -36,7 +39,7 @@ public class Board {
 	}
 
 	/**
-	 * Checks if a position in within the bounds of a level
+	 * Checks if a position in within the bounds of the board
 	 * @param pos position to consider
 	 * @return validity
 	 */
@@ -45,7 +48,7 @@ public class Board {
 	}
 
 	/**
-	 * Gets all of the possible moves from a point
+	 * Gets all of the possible moves from a point, excluding those which are outside the bounds of the board
 	 * @param pos position to move from
 	 * @return list of all moves from a point
 	 */
@@ -61,7 +64,7 @@ public class Board {
 	}
 
 	/**
-	 * It does what it says. This is for your own testing really
+	 * Nicely print the position of each tile in the tour. If a particular tile is not in the map, it is printed as -1
 	 */
 	public void printGrid() {
         for (int x = 0; x < size; x++) {
