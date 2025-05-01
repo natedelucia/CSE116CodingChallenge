@@ -1,5 +1,3 @@
-# Coding Quiz 3
+# Starter repo for SP25 CSE116 TA vs Professor coding challenge
 
-For this quiz, you are given the Mob class. You will need to create another class.
-
-To to the handout for more information on the coding quiz. Good luck!
+Write all your code in Main.java
